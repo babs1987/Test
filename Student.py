@@ -1,7 +1,8 @@
 class Student:
-    name = "Ivan"
-    groupNumber = "10A"
-    age = 18
+    def __init__(self,name="Ivan",groupNumber="10a",age=18):
+        self.name = name
+        self.groupNumber = groupNumber
+        self.age = age
     def getName(self):
         return self.name
     def getAge(self):
