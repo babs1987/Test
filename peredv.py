@@ -7,10 +7,8 @@ class Car(Srper):
         self.tank=tank
 
     def drive(self,range):
-        rashod=self.mass/5*20
-        actual=self.tank/rashod*100
-        if range>actual:
-            return f"авто проехало {actual} километров"
+        if range>self.tank/(self.mass/5*20)*100:
+            return f"авто проехало {self.tank/(self.mass/5*20)*100} километров"
         else:
             return "порядок, приехали"
 
@@ -20,9 +18,8 @@ class Kon(Srper):
         self.horses=horses
         self.mass=mass
     def drive(self,range):
-        actual=self.horses*100/self.mass
-        if range>actual:
-            return f"повозка проехала {actual} километров лошади сдохли"
+        if range>(self.horses*100/self.mass):
+            return f"повозка проехала {self.horses*100/self.mass} километров лошади сдохли"
         else:
             return "порядок, приехали"
 
@@ -30,3 +27,4 @@ bmw=Car(2,100)
 Plotvaandplotvadva=Kon(2,2)
 print(Plotvaandplotvadva.drive(500))
 print(bmw.drive(5000))
+

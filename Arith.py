@@ -15,8 +15,8 @@ class Arith:
         return (one+ two+ three+ four)/4
 
     @staticmethod
-    def fuck(u):
-        return math.factorial(u)
+    def fact(n):
+        return math.factorial(n)
 
 
-print(Arith.fuck(4))
+print(Arith.fact(4))
