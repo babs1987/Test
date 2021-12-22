@@ -1,19 +1,27 @@
 class Country:
-    population=0
+    def __init__(self,population=0):
+        self.population=population
+
     def set_population(self,pop):
         self.population=pop
 
     def get_population(self):
         return self.population
+    
+    
 class Russia(Country):
-    population = 144000000
+    def __init__(self,population=144100000):
+        super().__init__(population)
 
 class Canada(Country):
-    population = 909
-
+    def __init__(self,population=38000000):
+        super().__init__(population)
 class Germany(Country):
-    population = 11488
+    def __init__(self, population=83000000):
+        super().__init__(population)
 
+s=Russia()
+print(s.get_population())
 s=Germany()
 print(s.get_population())
 
