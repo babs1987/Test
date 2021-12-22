@@ -20,8 +20,8 @@ class Germany(Country):
     def __init__(self, population=83000000):
         super().__init__(population)
 
-s=Russia()
-print(s.get_population())
+r=Russia()
+print(r.get_population())
 s=Germany()
 print(s.get_population())
 
