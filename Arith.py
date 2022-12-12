@@ -3,20 +3,20 @@ import math
 
 class Arith:
     @staticmethod
-    def minof4(one, two, three, four):
-        return min(one, two, three, four)
+    def min_of_n(*nums):
+        return min(nums)
 
     @staticmethod
-    def maxof4(one, two, three, four):
-        return max(one, two, three, four)
+    def max_of_n(*nums):
+        return max(nums)
 
     @staticmethod
-    def absy(one, two, three, four):
-        return (one + two + three + four) / 4
+    def abs(*nums):
+        return sum(nums) / len(nums)
 
     @staticmethod
     def fact(n):
         return math.factorial(n)
 
-
+print(Arith.max_of_n(3,5,6,7))
 print(Arith.fact(4))
